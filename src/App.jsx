@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Scene from './components/Scene';
 import Overlay from './components/Overlay';
 import Modal from './components/Modal';
+import MusicPlayer from './components/MusicPlayer';
 import { STATE_NAMES } from './components/formations';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -58,6 +59,9 @@ export default function App() {
 
       {/* UI Overlay */}
       <Overlay stateName={stateName} />
+
+      {/* Music Player */}
+      <MusicPlayer />
 
       {/* Scroll spacer */}
       <div
