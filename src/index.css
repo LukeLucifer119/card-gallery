@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #0d0b14;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: #0d0b14;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Hide default scrollbar but keep scroll functionality */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0b14;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 107, 157, 0.3);
+  border-radius: 2px;
+}
+
+/* Canvas cursor */
+canvas {
+  cursor: grab;
+}
+canvas:active {
+  cursor: grabbing;
+}
